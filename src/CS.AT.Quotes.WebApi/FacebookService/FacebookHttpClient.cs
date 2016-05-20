@@ -16,8 +16,8 @@ namespace CS.AT.Quotes.WebApi.FacebookService
 
         public string VerificarToken(string token, string desafio)
         {
-            var verifytoken = _configuration["Facebook:EAASZBgNqfaL0BACU8yxSKhjcCnbxTZAGhFoXegc4BFVo9qZAJHZANnhixcU2rvZArUhpdP0bewqqu9kMt19w78PfZCMBzuzE5XyPtqbMKoc1CdgDqshE4ke2WxXBzgxDBg8wxtfgBTl6GCdANSwCWiXqSjewJCoODcZBbVwQ8FmWgZDZD"];
-            return token != verifytoken ? "Teste" : desafio;
+            var verifytoken = _configuration["Facebook:VerifyToken"];
+            return token != verifytoken ? "Error" : desafio;
         }
 
         public async Task EnviarMenssagem(string beneficiario, string mensagem)
