@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CS.AT.Quotes.WebApi.Controllers
@@ -10,7 +12,7 @@ namespace CS.AT.Quotes.WebApi.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new[] { "value1", "value2", DateTime.Now.ToString(CultureInfo.InvariantCulture) };
         }
 
         // GET api/values/5
