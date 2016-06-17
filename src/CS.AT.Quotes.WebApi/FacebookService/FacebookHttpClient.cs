@@ -17,7 +17,7 @@ namespace CS.AT.Quotes.WebApi.FacebookService
         public string VerificarToken(string token, string desafio)
         {
             var verifytoken = _configuration["Facebook:VerifyToken"];
-            return token != verifytoken ? "Error" : desafio;
+            return token != verifytoken ? "Invalid Token" : desafio;
         }
 
         public async Task EnviarMenssagem(string beneficiario, string mensagem)
