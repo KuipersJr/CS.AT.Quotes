@@ -10,5 +10,10 @@
     "netstandard1.5": {
       "imports": "dnxcore50"
     }
+  },
+
+  "runtimes": {
+    "win8-x86": { },
+    "win7-x86": { }
   }
 }
