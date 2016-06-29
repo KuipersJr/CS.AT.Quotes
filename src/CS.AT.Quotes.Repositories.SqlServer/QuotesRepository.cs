@@ -1,10 +1,15 @@
-﻿namespace CS.AT.Quotes.Domain.Quotes.Entities
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace CS.AT.Quotes.Repositories.SqlServer
 {
     // This project can output the Class library as a NuGet Package.
     // To enable this option, right-click on the project and select the Properties menu item. In the Build tab select "Produce outputs on build".
-    public class Quote
+    public class QuotesRepository
     {
-        public Quote()
+        public QuotesRepository()
         {
         }
     }
