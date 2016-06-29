@@ -7,7 +7,7 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>2c3c1b82-7939-469d-9fdf-7909602df4ae</ProjectGuid>
+    <ProjectGuid>8c7ee6cb-7541-4a91-a5d8-cb4860e9da1e</ProjectGuid>
     <RootNamespace>CS.AT.Quotes.Repositories.SqlServer</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
